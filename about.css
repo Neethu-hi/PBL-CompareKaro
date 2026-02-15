@@ -1,0 +1,173 @@
+/* 
+
+.about-flow {
+  max-width: 680px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+/* .about-flow h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.about-flow h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+/* .about-flow p {
+  line-height: 1.8;
+  margin-bottom: 22px;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Intro slightly bigger */
+/* .intro {
+  font-size: 20px;
+  color: #1f2937;
+}
+
+/* Thin divider instead of box */
+/* .break-line {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 50px 0;
+}  */
+
+/* Values row – not boxed */
+/* .values-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.values-row div {
+  flex: 1;
+  min-width: 160px;
+}  */
+
+/* .values-row h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Closing note */
+/* .closing-note {
+  margin-top: 70px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.closing-note p {
+  font-style: italic;
+  color: #555;
+} */ 
+
+.about-flow {
+  max-width: 720px;
+  margin: 110px auto;
+  padding: 0 24px;
+  position: relative;
+}
+
+/* Subtle soft background glow */
+.about-flow::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08), transparent 70%);
+  z-index: -1;
+}
+
+/* Headings */
+.about-flow h2 {
+  font-size: 36px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.about-flow h3 {
+  margin-top: 70px;
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Paragraphs */
+.about-flow p {
+  line-height: 1.9;
+  margin-bottom: 24px;
+  color: #4b5563;
+  font-size: 17px;
+}
+
+/* Intro line */
+.intro {
+  font-size: 21px;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Soft divider */
+.break-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d1d5db, transparent);
+  margin: 60px 0;
+}
+
+/* Values row */
+.values-row {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.values-row div {
+  flex: 1;
+  min-width: 160px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (very subtle) */
+.values-row div:hover {
+  transform: translateY(-4px);
+}
+
+.values-row h4 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.values-row p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Closing section */
+.closing-note {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.closing-note p {
+  font-style: italic;
+  color: #374151;
+}

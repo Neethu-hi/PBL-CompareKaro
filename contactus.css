@@ -1,0 +1,85 @@
+.contact-flow {
+  max-width: 650px;
+  margin: 110px auto;
+  padding: 0 24px;
+}
+
+.contact-flow h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.intro {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.contact-flow p {
+  line-height: 1.8;
+  margin-bottom: 22px;
+  color: #4b5563;
+}
+
+/* Form styling */
+.contact-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  font-size: 15px;
+  background: transparent;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #2563eb;
+}
+
+/* Button */
+.contact-form button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #111827;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Small note */
+.contact-note {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-note p {
+  font-size: 14px;
+  color: #6b7280;
+  font-style: italic;
+}
+

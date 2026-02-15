@@ -1,0 +1,78 @@
+.login-wrapper {
+  max-width: 380px;
+  margin: 120px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.login-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.login-subtext {
+  margin-bottom: 40px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Button */
+.login-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.signup-text span {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.signup-text span:hover {
+  text-decoration: underline;
+}
