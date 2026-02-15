@@ -6,7 +6,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;   /* full screen height */
+  min-height: 100vh;   
 }
 
 /* Header */
@@ -220,7 +220,7 @@ body {
 }
 
 .main-content {
-  flex: 1;   /* pushes footer to bottom */
+  flex: 1;  
 }
 
  .footer {
