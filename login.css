@@ -76,3 +76,108 @@
 .signup-text span:hover {
   text-decoration: underline;
 }
+
+/* ── Page fade in ── */
+.login-wrapper {
+  animation: fadeSlideUp 0.6s ease both;
+}
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Input focus lift ── */
+.login-form input {
+  background: #fff;
+  transition: border 0.25s, box-shadow 0.25s, transform 0.2s;
+}
+.login-form input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.12);
+}
+
+/* ── Shake animation for wrong login ── */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-8px); }
+  40%       { transform: translateX(8px); }
+  60%       { transform: translateX(-5px); }
+  80%       { transform: translateX(5px); }
+}
+.shake { animation: shake 0.45s ease; }
+
+/* ── Input error state ── */
+.login-form input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239,68,68,0.12);
+}
+
+/* ── Button loading state ── */
+.login-form button.loading {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Password toggle button ── */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-wrapper input {
+  width: 100%;
+  padding-right: 44px;
+}
+.toggle-pw {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #9ca3af;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+  /* cancel the margin-bottom that inputs have */
+  margin-bottom: 0;
+}
+.toggle-pw:hover { color: #2563eb; }
+
+/* ── Strength bar ── */
+.strength-bar-wrap {
+  display: flex;
+  gap: 6px;
+  margin: -18px 0 22px;
+}
+.strength-seg {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  transition: background 0.3s;
+}
+
+/* ── Toast ── */
+#toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #111827;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: transform 0.4s cubic-bezier(.22,.68,0,1.2), opacity 0.3s;
+}
+#toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}

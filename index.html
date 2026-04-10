@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Comparekaro – A Smarter Way to Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,17 +37,24 @@
         </p>
 
         <div class="hero-search">
-            <input type="text" placeholder="Search for a product">
-            <button>Compare</button>
+            <input type="text" id="searchInput" placeholder="Search for a product">
+            <button id="searchBtn">Compare</button>
         </div>
     </div>
 </div>
 
+<div class="sort-bar">
+  <button class="sort-btn active" data-sort="default">All</button>
+  <button class="sort-btn" data-sort="price-asc">Price: Low → High</button>
+  <button class="sort-btn" data-sort="price-desc">Price: High → Low</button>
+  <button class="sort-btn" data-sort="rating">Top Rated</button>
+</div>
+
     <!-- Products -->
-    <div class="products">
+    <div class="products" id="productsGrid">
 
-        <div class="product-card best">
-
+        <div class="product-card best" data-name="iphone 16" data-price="68999" data-rating="4.6">
+            <button class="heart-btn" aria-label="Wishlist">♡</button>
             <div class="badge">Best Deal</div>
 
             <img class="pictures" src="images/iphone1.jpg">
@@ -57,13 +65,13 @@
             <p class="rating">★★★★☆ (4.6)</p>
             <p class="website">Amazon</p>
 
-            <button class="visit-btn">Visit Website</button>
+            <button class="visit-btn" data-site="Amazon">Visit Website</button>
 
         </div>
 
 
-        <div class="product-card ">
-
+        <div class="product-card " data-name="iphone 16" data-price="69999" data-rating="4.5">
+            <button class="heart-btn" aria-label="Wishlist">♡</button>
             <img class="pictures" src="images/iphone2.jpg">
 
             <h4>iPhone 16</h4>
@@ -72,12 +80,12 @@
             <p class="rating">★★★★☆ (4.5)</p>
             <p class="website">Flipkart</p>
 
-            <button class="visit-btn">Visit Website</button>
+            <button class="visit-btn" data-site="Flipkart">Visit Website</button>
 
         </div>
 
-        <div class="product-card ">
-
+        <div class="product-card " data-name="iphone 16" data-price="71000" data-rating="4.4">
+            <button class="heart-btn" aria-label="Wishlist">♡</button>
             <img class="pictures" src="images/iphone3.jpg">
 
             <h4>iPhone 16</h4>
@@ -86,8 +94,13 @@
             <p class="rating">★★★★☆ (4.4)</p>
             <p class="website"> Croma</p>
 
-            <button class="visit-btn">Visit Website</button>
+            <button class="visit-btn" data-site="Croma">Visit Website</button>
 
+        </div>
+
+        <div class="no-results" id="noResults">
+        <span>🔍</span>
+        No results found. Try a different search.
         </div>
 
 
@@ -99,6 +112,7 @@
 <div class="footer">
      <p>Comparekaro © 2026 | Project-Based Learning</p>
 </div>
-
+<div id="toast"></div>
+<script src="script.js"></script>
 </body>
 </html>

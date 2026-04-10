@@ -43,14 +43,20 @@
         <!-- Right side form -->
         <div class="signup-form-wrapper">
 
-            <form class="signup-form">
+            <form class="signup-form" id="signupForm">
 
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="password" placeholder="Create Password" required>
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="text" id="nameInput" placeholder="Full Name" required>
+                <input type="email" id="emailInput" placeholder="Email Address" required>
+                <input type="password" id="passwordInput" placeholder="Create Password" required>
+                <div class="strength-bar-wrap">
+                <div class="strength-seg" id="seg1"></div>
+                <div class="strength-seg" id="seg2"></div>
+                <div class="strength-seg" id="seg3"></div>
+                <div class="strength-seg" id="seg4"></div>
+                </div>
+                <input type="password" id="confirmInput" placeholder="Confirm Password" required>
 
-                <button type="submit">Create Account</button>
+                <button type="submit" id="submitBtn">Create Account</button>
 
             </form>
 
@@ -69,6 +75,7 @@
 <div class="footer">
     <p>Comparekaro © 2026 | Project-Based Learning</p>
 </div>
-
+<div id="toast"></div>
+<script src="createone.js"></script>
 </body>
 </html>
